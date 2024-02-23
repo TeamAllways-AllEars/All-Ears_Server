@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/subtitle")
 public class SubtitleController {
     private final SubtitleService subtitleService;
-    @PutMapping("")
+    @PostMapping("")
     public ResponseEntity<?> createSubtitle(@RequestParam String identity,
                                            @RequestBody SubtitleCreateRequestDto subtitleCreateRequestDto){
 
